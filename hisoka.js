@@ -1474,7 +1474,7 @@ break
                     {buttonId: `darkjokes`, buttonText: {displayText: 'Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
-                    image: { url: https://hardianto.xyz/api/darkmeme?apikey=hardianto },
+                    image: { url: 'https://hardianto.xyz/api/darkmeme?apikey=hardianto' },
                     caption: `Senter Mana Senter`,
                     footer: hisoka.user.name,
                     buttons: buttons,
