@@ -1468,6 +1468,23 @@ break
         })
         }
         break
+        case 'darkjokes': case 'darkjoke': {
+        if (!text) throw `Example : ${prefix + command}`
+        let res = `https://hardianto.xyz/api/darkmeme?apikey=hardianto`
+        let buttons = [
+                    {buttonId: `darkjokes`, buttonText: {displayText: 'Next Image'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: { url: res },
+                    caption: `Senter Mana Senter`,
+                    footer: hisoka.user.name,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
+        })
+        }
+        break
 	    case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} story wa anime`
                 let yts = require("yt-search")
